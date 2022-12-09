@@ -31,9 +31,10 @@ function Clock() {
         return value < 10 ? '0' + value : value
     }
     const time = new Date()
-    const stringTime = `${getTimeWithoutZero(time.getHours())}
+    const stringTime = `${getTimeWithoutZero(time.getHours())} //new Date().toLocaleTimeString()
     : ${getTimeWithoutZero(time.getMinutes())}
     : ${getTimeWithoutZero(time.getSeconds())}`
+
     const stringDate = `${time.getDate()}.${time.getMonth() + 1}.${time.getFullYear()}`
 
     return (
