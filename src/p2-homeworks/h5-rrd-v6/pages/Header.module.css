@@ -1,0 +1,44 @@
+.wrapper {
+    overflow-x: hidden;
+    width: 350px;
+}
+.panel {
+    display: flex;
+    width: 310px;
+    height: 25px;
+    transition: 0.5s;
+    transform: translateX(-85%);
+    justify-content: space-between;
+    align-items: center;
+}
+.panelActive {
+    transform: translateX(0%);
+}
+.content {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+.preJunior, .junior, .superJunior {
+    color: white;
+    text-decoration: none;
+}
+.preJunior:hover, .junior:hover, .superJunior:hover {
+    color: blueviolet;
+    background-color: white;
+}
+.junior {
+
+}
+.superJunior {
+
+}
+.btn {
+    background-color: blueviolet;
+    color: white;
+    border: solid 1px blueviolet;
+    border-radius: 3px;
+    width: 40px;
+    height: 25px;
+}
